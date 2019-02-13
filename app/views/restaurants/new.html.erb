@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= simple_form_for @restaurant do |f| %>
+        <%= f.input :name, placeholder: 'enter name'%>
+        <%= f.input :address, placeholder: 'enter an address' %>
+        <%= f.input :phone_number %>
+        <%= f.input :category%>
+        <%= f.submit class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+ <%= link_to "back to list" , restaurants_path %>
